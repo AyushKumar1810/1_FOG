@@ -1,0 +1,268 @@
+ /* .side-menu {
+  background: none;
+  width: 5vw;
+  height: 100vh; 
+  display: block;
+  position: fixed;
+  margin-top: 17vh;
+  overflow: visible;
+  top: 0;
+  left: 0; 
+  right: auto;
+}
+
+.menu-item {
+  margin: 10px 0; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+  position: relative; 
+  display: flex; 
+  align-items: center; 
+  left: 0; 
+}
+
+.menu-item img {
+  opacity: 0.5;
+  width: 50px; 
+  height: 50px;
+  object-fit: cover;
+  margin-left: 10px; 
+}
+
+.menu-item :hover {
+  opacity: 1;
+}
+
+.menu-item:hover::after {
+  content: 'Battlefield';
+  position: absolute;
+  left: 80px; 
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.play-button, .menu-button, .power-button {
+  width: 50px; 
+  height: 50px; 
+  background-color: #555;
+  border: none;
+  cursor: pointer;
+}
+
+.play-button::before {
+  content: '\25B6'; 
+  color: white; 
+  font-size: 24px;
+}
+
+.menu-button::before {
+  content: '\2630'; 
+  color: white; 
+  font-size: 24px; 
+}
+
+.power-button::before {
+  content: '\23FB'; 
+  color: white; 
+  font-size: 24px; 
+}
+
+.menu-item-lower-container {
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 34vh;
+  margin-bottom: 10px;
+}
+
+.menu-item-lower {
+  height: 2vh;
+  width: 1vw;
+} 
+ */
+
+
+ .side-menu {
+  background: none;
+  width: 5vw;
+  height: 100vh; 
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 17vh;
+  overflow: visible;
+  top: 0;
+  left: 0; 
+  right: auto;
+}
+
+.menu-item {
+  margin: 1em 0; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+  position: relative; 
+  display: flex; 
+  align-items: center; 
+  left: 0; 
+}
+
+.menu-item img {
+  opacity: 0.5;
+  width: 2.5rem; 
+  height: 2.5rem;
+  object-fit: cover;
+  margin-left: 0.5em; 
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.menu-item:hover::after {
+  content: 'Battlefield';
+  position: absolute;
+  left: 4em; 
+  background-color: black;
+  color: white;
+  padding: 0.25em;
+  font-size: 0.875rem;
+  border-radius: 0.25em;
+  white-space: nowrap;
+}
+
+.play-button, .menu-button, .power-button {
+  width: 2.5rem; 
+  height: 2.5rem; 
+  background-color: #555;
+  border: none;
+  cursor: pointer;
+}
+
+.play-button::before {
+  content: '\25B6'; 
+  color: white; 
+  font-size: 1.5rem;
+}
+
+.menu-button::before {
+  content: '\2630'; 
+  color: white; 
+  font-size: 1.5rem; 
+}
+
+.power-button::before {
+  content: '\23FB'; 
+  color: white; 
+  font-size: 1.5rem; 
+}
+
+.menu-item-lower-container {
+  display: flex;
+  flex-direction: column;
+  width: 4rem;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 1em;
+}
+
+.menu-item-lower {
+  height: 2vh;
+  width: 1vw;
+} 
+
+@media (max-width: 768px) {
+  .side-menu {
+    width: 10vw;
+    margin-top: 10vh;
+  }
+
+  .menu-item img {
+    width: 2rem; 
+    height: 2rem;
+  }
+
+  .menu-item:hover::after {
+    left: 3em; 
+    font-size: 0.75rem;
+    padding: 0.2em;
+  }
+
+  .play-button, .menu-button, .power-button {
+    width: 2rem; 
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .play-button::before, .menu-button::before, .power-button::before {
+    font-size: 1.2rem;
+  }
+
+  .menu-item-lower-container {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 22rem;
+    margin-bottom: 1em;
+  }
+
+  .menu-item-lower {
+    height: 1.4vh;
+    width: 1.6vw; 
+  }
+
+}
+
+@media (max-width: 480px) {
+  .side-menu {
+    width: 15vw;
+    margin-top: 5vh;
+  }
+
+  .menu-item img {
+    width: 1.5rem; 
+    height: 1.5rem;
+  }
+
+  .menu-item:hover::after {
+    left: 2.5em; 
+    font-size: 0.65rem;
+    padding: 0.15em;
+  }
+
+  .play-button, .menu-button, .power-button {
+    width: 1.5rem; 
+    height: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .play-button::before, .menu-button::before, .power-button::before {
+    font-size: 1rem;
+  }
+
+  .menu-item-lower-container {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 25rem;
+    margin-bottom: 1em;
+  }
+
+  .menu-item-lower {
+    height: 1.4vh;
+    width: 1.8vw; 
+  }
+}

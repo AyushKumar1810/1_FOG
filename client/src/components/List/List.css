@@ -1,0 +1,58 @@
+:root {
+    --on-color: #white; 
+    --off-color: #white; 
+    --text-color: white; 
+    --bg-color: #white; 
+  }
+  
+  .settings-list {
+    width: 300px;
+    font-family: Rajdhani, sans-serif;
+    font-weight: normal;
+    color: var(--text-color);
+  }
+  
+  .settings-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    background: none;
+    
+  }
+  
+  .settings-list :hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+  .settings-item:last-child {
+    border-bottom: none;
+  }
+  
+  .settings-key {
+    flex: 1;
+    text-align: left;
+    font-size: 1.3em;
+  }
+  
+  .settings-value {
+    flex: 1;
+    text-align: right;
+    font-size: 1.2em;
+  }
+  
+  .settings-value.on {
+    color: var(--on-color);
+  }
+  
+  .settings-value.off {
+    color: var(--off-color);
+  }
+
+  @media (max-width: 480px) {
+    .settings-list {
+      width: 250px;
+    }
+  }
+  

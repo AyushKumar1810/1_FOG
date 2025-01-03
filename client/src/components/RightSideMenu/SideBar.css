@@ -1,0 +1,67 @@
+.sidebar {
+    display: flex;
+    width: 8vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: column;
+    padding-top: 3.5vh;
+    padding-left: 1.5vh;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+    transition: width 0.5s ease;
+}
+
+.sidebar:hover {
+    width: 27vh;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.sidebar:hover p {
+    overflow: visible;
+}
+
+.online-status-icon, .online-status-button, .offline-status-button, .offline-status-icon, .squad-button, .squad-icon {
+    display: flex;
+    gap: 0.5rem;
+}
+.offline-status-button{
+    opacity: 0.5;
+}
+p {
+    display: block;
+    width: 0.0001%;
+    overflow: hidden;
+}
+
+.online-status-button:hover, .squad-button:hover  {
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-weight: bold;
+}
+
+.offline-status-button:hover {
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-weight: bold;
+}
+.squad-button:hover img {
+    background-color: rgb(88, 88, 88);
+}
+
+@media (max-width: 480px) {
+
+    .sidebar {
+        width: 6vh;
+        background-color: rgba(0, 0, 0, 0.158);
+    }
+
+    .sidebar:hover {
+        width: 17vh;
+        background-color: rgba(0, 0, 0, 0.774);
+    }
+    
+}
