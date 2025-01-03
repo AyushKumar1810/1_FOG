@@ -1,55 +1,55 @@
-Task - Build the Battlefield 4 SERVER INFO page. You can find the design and all assets on “#menu multiplayer / server browser / server info” frame of this Figma UI. Data highlighted in the green section should be served from the backend using one/multiple API calls. Hover and click interactions should work just as they do on the page.
+# Project Title
+Fog Project
 
-Tips - Consider using free hosting services like GitHub Pages, Netlify, or Vercel. Make sure to test the page on different devices to ensure responsiveness.
+## Description
+This project is a web application that provides various functionalities related to fog data visualization and management. It consists of a client-side application built with React and a server-side application using Node.js.
 
-Describe your high-level approach to solve this problem. answer that based on my assignmnet
+## Installation
+To set up the project locally, follow these steps:
 
-see
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the client directory and install dependencies:
+   ```bash
+   cd client
+   npm install
+   ```
+3. Navigate to the server directory and install dependencies:
+   ```bash
+   cd ../server
+   npm install
+   ```
 
-GitHub Copilot
-To build the Battlefield 4 SERVER INFO page using React.js and Node.js, follow these high-level steps:
+## Usage
+To run the project, follow these steps:
 
-Setup the Project:
+1. Start the server:
+   ```bash
+   cd server
+   npm start
+   ```
+2. In a new terminal, start the client:
+   ```bash
+   cd client
+   npm start
+   ```
 
-Initialize a new React project using Create React App.
-Set up a Node.js backend using Express.
-Design the Frontend:
+Visit `http://localhost:3000` in your browser to view the application.
 
-Use the Figma design to create the UI components in React.
-Break down the UI into reusable components (e.g., ServerInfo, PlayerList, ServerDetails).
-Use CSS or a CSS-in-JS library for styling to match the Figma design.
-Implement hover and click interactions using React state and event handlers.
-Setup the Backend:
+## Features
+- Data visualization of fog-related metrics.
+- Interactive map rotation feature.
+- Responsive design for various devices.
 
-Create an Express server.
-Define API endpoints to serve the data required by the frontend.
-Use mock data or connect to a real database if available.
-Connect Frontend and Backend:
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
 
-Use Axios or Fetch API to call the backend APIs from the React components.
-Manage the data fetching and state in React using hooks like useState and useEffect.
-Testing and Deployment:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your branch and create a pull request.
 
-Test the application on different devices to ensure responsiveness.
-Deploy the frontend using GitHub Pages, Netlify, or Vercel.
-Deploy the backend using a service like Heroku or Vercel.
-Detailed Steps:
-Setup the Project:
-
-Initialize React project:
-Initialize Node.js project:
-Design the Frontend:
-
-Create React components based on the Figma design.
-Example structure:
-Setup the Backend:
-
-Create an Express server:
-Connect Frontend and Backend:
-
-Fetch data in React component:
-Testing and Deployment:
-
-Test the application on different devices.
-Deploy the frontend and backend using appropriate services.
-This approach ensures a structured development process, from setting up the project to deploying it.
+## License
+This project is licensed under the MIT License.
