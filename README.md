@@ -1,8 +1,7 @@
-# Project Title
-Fog Project
+# Battlefield 4 SERVER INFO Page
 
 ## Description
-This project is a web application that provides various functionalities related to fog data visualization and management. It consists of a client-side application built with React and a server-side application using Node.js.
+This project is a web application that provides detailed information about Battlefield 4 servers. It is built using React for the frontend and Node.js for the backend. The application fetches server data through API calls and displays it in a user-friendly interface.
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -39,8 +38,8 @@ To run the project, follow these steps:
 Visit `http://localhost:3000` in your browser to view the application.
 
 ## Features
-- Data visualization of fog-related metrics.
-- Interactive map rotation feature.
+- Displays detailed information about Battlefield 4 servers.
+- Interactive UI with hover and click interactions.
 - Responsive design for various devices.
 
 ## Contributing
