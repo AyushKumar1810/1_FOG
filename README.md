@@ -1,55 +1,130 @@
-Task - Build the Battlefield 4 SERVER INFO page. You can find the design and all assets on “#menu multiplayer / server browser / server info” frame of this Figma UI. Data highlighted in the green section should be served from the backend using one/multiple API calls. Hover and click interactions should work just as they do on the page.
+README.md for Battlefield 4 SERVER INFO Page Project
+Project Overview
+This project involves building the Battlefield 4 SERVER INFO page using React.js for the frontend and Node.js for the backend. The design and assets are based on the Figma UI provided in the "#menu multiplayer / server browser / server info" frame. The page includes hover and click interactions, and the data highlighted in the green section is served from the backend via API calls.
 
-Tips - Consider using free hosting services like GitHub Pages, Netlify, or Vercel. Make sure to test the page on different devices to ensure responsiveness.
+Features
+Frontend:
 
-Describe your high-level approach to solve this problem. answer that based on my assignmnet
+Responsive UI designed using React.js.
+Reusable components for Server Info, Player List, and Map Details.
+Hover and click interactions implemented using React state and event handlers.
+Data fetched from the backend and displayed dynamically.
+Backend:
 
-see
+Node.js server with Express.js for handling API requests.
+API endpoints for serving server info, player list, and map details.
+Mock data used for initial development.
+Technologies Used
+Frontend:
 
-GitHub Copilot
-To build the Battlefield 4 SERVER INFO page using React.js and Node.js, follow these high-level steps:
+React.js
+CSS or CSS-in-JS (e.g., styled-components)
+Axios or Fetch API for data fetching
+Backend:
 
-Setup the Project:
+Node.js
+Express.js
+JSON for data structure
+Deployment:
 
-Initialize a new React project using Create React App.
-Set up a Node.js backend using Express.
-Design the Frontend:
+Frontend: GitHub Pages, Netlify, or Vercel
+Backend: Heroku, Vercel, or Render
+Project Structure
+Insert Code
+Run
+Copy code
+battlefield4-server-info/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ServerInfo.jsx
+│   │   │   ├── PlayerList.jsx
+│   │   │   ├── ServerDetails.jsx
+│   │   │   └── MapInfo.jsx
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── styles/
+│   │       └── App.css
+│   └── package.json
+├── backend/
+│   ├── routes/
+│   │   ├── serverInfo.js
+│   │   ├── playerList.js
+│   │   └── mapInfo.js
+│   ├── app.js
+│   ├── package.json
+│   └── mockData.json
+└── README.md
+Setup Instructions
+1. Frontend Setup
+Navigate to the frontend folder:
+bash
+Insert Code
+Run
+Copy code
+cd frontend
+Install dependencies:
+bash
+Insert Code
+Run
+Copy code
+npm install
+Start the development server:
+bash
+Insert Code
+Run
+Copy code
+npm start
+Open your browser and visit http://localhost:3000.
+2. Backend Setup
+Navigate to the backend folder:
+bash
+Insert Code
+Run
+Copy code
+cd backend
+Install dependencies:
+bash
+Insert Code
+Run
+Copy code
+npm install
+Start the server:
+bash
+Insert Code
+Run
+Copy code
+npm start
+The backend will run on http://localhost:5000.
+3. Connecting Frontend and Backend
+Ensure the backend is running and update the API base URL in the frontend code (e.g., http://localhost:5000/api).
+API Endpoints
+Server Info: GET /api/server-info
+Player List: GET /api/player-list
+Map Info: GET /api/map-info
+Deployment Instructions
+Frontend Deployment
+Build the React app:
+bash
+Insert Code
+Run
+Copy code
+npm run build
+Deploy to GitHub Pages, Netlify, or Vercel:
+Follow the deployment guide for your chosen platform.
+Backend Deployment
+Deploy the Node.js backend to Heroku, Vercel, or Render:
+Follow the deployment guide for your chosen platform.
+Testing
+Test the application on different devices (desktop, tablet, mobile) to ensure responsiveness.
+Verify all hover and click interactions.
+Ensure data is fetched and displayed correctly from the backend.
+Links
+Hosted Webpage: Link to Deployed Frontend
+GitHub Repository: Link to Repository
+Contributing
+Contributions are welcome! If you find any issues or want to add features, feel free to open a pull request.
 
-Use the Figma design to create the UI components in React.
-Break down the UI into reusable components (e.g., ServerInfo, PlayerList, ServerDetails).
-Use CSS or a CSS-in-JS library for styling to match the Figma design.
-Implement hover and click interactions using React state and event handlers.
-Setup the Backend:
-
-Create an Express server.
-Define API endpoints to serve the data required by the frontend.
-Use mock data or connect to a real database if available.
-Connect Frontend and Backend:
-
-Use Axios or Fetch API to call the backend APIs from the React components.
-Manage the data fetching and state in React using hooks like useState and useEffect.
-Testing and Deployment:
-
-Test the application on different devices to ensure responsiveness.
-Deploy the frontend using GitHub Pages, Netlify, or Vercel.
-Deploy the backend using a service like Heroku or Vercel.
-Detailed Steps:
-Setup the Project:
-
-Initialize React project:
-Initialize Node.js project:
-Design the Frontend:
-
-Create React components based on the Figma design.
-Example structure:
-Setup the Backend:
-
-Create an Express server:
-Connect Frontend and Backend:
-
-Fetch data in React component:
-Testing and Deployment:
-
-Test the application on different devices.
-Deploy the frontend and backend using appropriate services.
-This approach ensures a structured development process, from setting up the project to deploying it.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
